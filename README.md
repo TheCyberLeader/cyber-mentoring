@@ -43,17 +43,7 @@ This toolkit is designed for **mentor and mentee pairs** in a structured cyberse
 
 ## Security & Privacy
 
-This app has **no backend, no API, no authentication, and no external data transmission**. It is a fully static site — once loaded, it runs entirely in your browser.
-
-- **All data stays on your device.** Profile information, goals, session logs, and milestones are stored in your browser's `localStorage`. Nothing is ever sent to a server.
-- **No accounts or logins.** There is nothing to hack, no passwords to leak, and no user database.
-- **No analytics or tracking.** No cookies, no telemetry, no third-party scripts.
-- **Clearing your browser data deletes everything.** Use the JSON export feature to back up your data regularly.
-- **Shared devices.** If multiple people use the same browser on the same device, they will see each other's data. Use the "Start Fresh" option on the home page or export and clear between users.
-
-The only network requests the app makes are to load its own static assets from GitHub Pages. After the initial page load, everything runs offline.
-
-**A note on JSON import:** The import feature validates file structure and shape but does not sanitize content. The app is safe in practice because React escapes all rendered output by default. That said, only import JSON files from sources you trust.
+See [SECURITY.md](SECURITY.md) for the full security model, privacy details, and how to report vulnerabilities.
 
 ---
 

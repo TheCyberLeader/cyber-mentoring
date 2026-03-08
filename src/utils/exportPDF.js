@@ -36,10 +36,6 @@ function addHeader(doc, title, logo) {
   if (logo) {
     doc.addImage(logo, "PNG", 14, 10, 40, 12);
   }
-  doc.setFontSize(10);
-  doc.setTextColor(...GRAY);
-  doc.text(config.chapterName, doc.internal.pageSize.width - 14, 18, { align: "right" });
-
   doc.setFontSize(16);
   doc.setTextColor(...NAVY);
   doc.setFont(undefined, "bold");
@@ -62,7 +58,7 @@ function addFooter(doc) {
     const pageW = doc.internal.pageSize.width;
     const pageH = doc.internal.pageSize.height;
     doc.text(
-      `${config.chapterName} — Cybersecurity Mentoring Toolkit`,
+      `Cybersecurity Mentoring Toolkit`,
       14,
       pageH - 10
     );

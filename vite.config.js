@@ -5,7 +5,7 @@ import { resolve } from 'path'
 import { copyFileSync } from 'fs'
 
 export default defineConfig({
-  base: '/isc2nj-mentoring-toolkit/',
+  base: '/cyber-mentoring/',
   plugins: [
     react(),
     tailwindcss(),

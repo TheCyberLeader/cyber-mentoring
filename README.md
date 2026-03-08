@@ -1,6 +1,6 @@
-# ISC2 NJ Chapter Cybersecurity Mentoring Toolkit
+# Cybersecurity Mentoring Toolkit
 
-A local-first web application for structured cybersecurity mentoring programs. Built for the ISC2 New Jersey Chapter's Cyber Pathways Mentoring Program.
+A local-first web application for structured cybersecurity mentoring programs.
 
 ![Screenshot](public/assets/screenshot.png)
 
@@ -8,15 +8,13 @@ A local-first web application for structured cybersecurity mentoring programs. B
 
 **No installation needed. Just click and go:**
 
-👉 **[Open the Mentoring Toolkit](https://thecyberleader.github.io/isc2nj-mentoring-toolkit/)**
-
 The app runs entirely in your browser. Nothing is installed, nothing is uploaded, and no account is required.
 
 ---
 
 ## Who Is This For?
 
-This toolkit is designed for **mentor and mentee pairs** in the ISC2 NJ Chapter's Cyber Pathways Mentoring Program. It helps you:
+This toolkit is designed for **mentor and mentee pairs** in a structured cybersecurity mentoring program. It helps you:
 
 - Set up your mentor or mentee profile
 - Define SMART goals for the program
@@ -58,9 +56,9 @@ The only network requests the app makes are to load its own static assets from G
 
 ---
 
-## For Other ISC2 Chapters
+## Customizing This Toolkit
 
-See [WHITELABEL.md](WHITELABEL.md) for a step-by-step guide to forking and customizing this toolkit for your own chapter.
+See [WHITELABEL.md](WHITELABEL.md) for a step-by-step guide to forking and customizing this toolkit.
 
 ---
 
@@ -68,13 +66,13 @@ See [WHITELABEL.md](WHITELABEL.md) for a step-by-step guide to forking and custo
 
 > This section is for developers who want to run or modify the code locally.
 ```bash
-git clone https://github.com/TheCyberLeader/isc2nj-mentoring-toolkit.git
-cd isc2nj-mentoring-toolkit
+git clone https://github.com/TheCyberLeader/cyber-mentoring.git
+cd cyber-mentoring
 npm install
 npm run dev
 ```
 
-Open http://localhost:5173/isc2nj-mentoring-toolkit/ in your browser.
+Open http://localhost:5173/cyber-mentoring/ in your browser.
 
 ### Scripts
 
@@ -116,4 +114,4 @@ This builds the app and publishes the `dist/` folder via the `gh-pages` branch.
 
 ## License
 
-MIT — free to use and adapt for any ISC2 chapter or mentoring program.
+MIT — free to use and adapt for any mentoring program.

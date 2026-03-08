@@ -30,17 +30,9 @@ export default function Home() {
     <div className="min-h-[calc(100vh-4rem)]">
       {/* Hero section */}
       <section className="bg-light-gray py-16 px-4 text-center">
-        <img
-          src={config.logoVertical}
-          alt={config.chapterName}
-          className="mx-auto h-32 w-auto mb-6"
-        />
         <h1 className="text-3xl sm:text-4xl font-bold mb-3 text-navy">
           Cybersecurity Mentoring Toolkit
         </h1>
-        <p className="text-lg text-[#444444] max-w-2xl mx-auto">
-          A program of the {config.chapterName} &mdash; {config.programName}
-        </p>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
@@ -205,18 +197,6 @@ export default function Home() {
         )}
       </div>
 
-      {/* Footer */}
-      <footer className="border-t border-light-blue bg-light-gray py-6 px-4 text-center text-sm text-dark/50">
-        A program of the {config.chapterName} &middot;{" "}
-        <a
-          href={config.chapterUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-isc2-blue hover:underline"
-        >
-          {config.chapterUrl.replace("https://", "")}
-        </a>
-      </footer>
     </div>
   );
 }

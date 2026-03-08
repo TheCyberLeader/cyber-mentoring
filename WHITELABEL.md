@@ -28,23 +28,23 @@ This is the primary customization file. Every field explained:
 
 ```js
 export const config = {
-  // Your chapter's display name — appears in the navbar, footer, PDFs
-  chapterName: "ISC2 New Jersey Chapter",
+  // Your organization's display name — appears in the navbar, footer, PDFs
+  chapterName: "Your Organization Name",
 
-  // Your chapter's website — linked in the footer
-  chapterUrl: "https://newjersey.isc2chapters.isc2.org",
+  // Your organization's website — linked in the footer
+  chapterUrl: "https://your-organization.org",
 
-  // Your chapter's LinkedIn — not currently displayed, available for future use
-  chapterLinkedIn: "https://www.linkedin.com/company/isc2chapternj",
+  // Your organization's LinkedIn — not currently displayed, available for future use
+  chapterLinkedIn: "https://www.linkedin.com/company/your-org",
 
   // Your mentoring program's name — used in email templates and the home page
-  programName: "Cyber Pathways Mentoring Program",
+  programName: "Cybersecurity Mentoring Program",
 
   // Paths to your logo files in public/assets/
   // Horizontal: used in the navbar and PDF headers (~40x12mm at export)
   // Vertical: used on the home page hero
-  logoHorizontal: `${base}assets/isc2nj-logo-horizontal.png`,
-  logoVertical: `${base}assets/isc2nj-logo-vertical.png`,
+  logoHorizontal: `${base}assets/logo-horizontal.png`,
+  logoVertical: `${base}assets/logo-vertical.png`,
 
   // Brand colors — referenced in config but the actual theme colors
   // used by Tailwind are defined in src/index.css (see step 5)
@@ -63,8 +63,8 @@ Replace these files in `public/assets/`:
 
 | File | Usage | Recommended size |
 |------|-------|-----------------|
-| `isc2nj-logo-horizontal.png` | Navbar, PDF headers | 400x120px, transparent PNG |
-| `isc2nj-logo-vertical.png` | Home page hero | 300x300px, transparent PNG |
+| `logo-horizontal.png` | Navbar, PDF headers | 400x120px, transparent PNG |
+| `logo-vertical.png` | Home page hero | 300x300px, transparent PNG |
 
 You can rename the files — just update the paths in `config.js` to match.
 

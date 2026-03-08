@@ -19,7 +19,6 @@ export const roles = {
     ],
     communities: [
       { name: "Women in Cybersecurity (WiCyS)", url: "https://www.wicys.org/" },
-      { name: "(ISC)² NJ Chapter", url: "https://newjersey.isc2chapters.isc2.org/page/overview", note: "Monthly meetings, CTF events, Cyber Pathways mentorship" },
       { name: "OWASP NYC Chapter", url: "https://owasp.org/www-chapter-new-york-city/" },
     ],
   },

@@ -1,4 +1,4 @@
-# Maintenance Guide — ISC2 NJ Mentoring Toolkit
+# Maintenance Guide — Cybersecurity Mentoring Toolkit
 
 This is a personal project maintained solely by Marie Wang. This guide documents the workflow and conventions I follow when making updates — for my own reference and consistency.
 
@@ -92,5 +92,3 @@ When using Claude Code (or any AI tool) on this project, the tool must always:
 **No change should be applied to the codebase without the developer reviewing and explicitly approving it first.** This applies to all operations — creates, edits, deletes, and refactors.
 
 ---
-
-*Built for the ISC2 New Jersey Chapter — Cyber Pathways Mentoring Program*

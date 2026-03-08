@@ -22,11 +22,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-4 shrink-0">
-            <img
-              src={config.logoHorizontal}
-              alt={config.chapterName}
-              className="h-10 w-auto"
-            />
             <span className="hidden md:block text-sm font-medium text-navy">
               Cybersecurity Mentoring Toolkit
             </span>

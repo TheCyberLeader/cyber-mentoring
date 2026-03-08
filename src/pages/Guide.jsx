@@ -288,7 +288,7 @@ export default function Guide() {
 
       {/* Print footer */}
       <div className="hidden print:block text-center text-xs text-dark/40 border-t border-gray-200 pt-4 mt-8">
-        ISC2 New Jersey Chapter &mdash; Cybersecurity Mentoring Toolkit &mdash; {activeTab === "mentor" ? "Mentor" : "Mentee"} Guide
+        Cybersecurity Mentoring Toolkit &mdash; {activeTab === "mentor" ? "Mentor" : "Mentee"} Guide
       </div>
     </div>
   );

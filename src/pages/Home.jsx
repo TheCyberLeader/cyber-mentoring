@@ -36,7 +36,7 @@ export default function Home() {
         <img
           src={`${import.meta.env.BASE_URL}assets/maries-mentor-mondays.png`}
           alt="Marie's Mentor Mondays"
-          className="mx-auto mt-4 h-16"
+          className="mx-auto mt-4 h-24"
         />
       </section>
 

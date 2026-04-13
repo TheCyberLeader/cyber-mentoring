@@ -27,62 +27,53 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-[calc(100vh-4rem)]">
+    <div className="relative min-h-[calc(100vh-4rem)] overflow-hidden">
+      {/* Full-page swirl layer — visible in white content area */}
+      <svg
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        {/* Right side — large orange arc descending through page */}
+        <path d="M1100,100 C980,200 1060,400 940,520 C820,640 900,800 780,880" fill="none" stroke="#F47920" strokeWidth="2.5" strokeOpacity="0.10" />
+        <path d="M1080,60 C1000,180 1080,380 960,500 C840,620 920,780 800,860" fill="none" stroke="#F47920" strokeWidth="1.5" strokeOpacity="0.07" />
+        {/* Left side — grey arc */}
+        <path d="M-80,300 C60,380 20,560 140,660 C260,760 200,900 340,960" fill="none" stroke="#9CA3AF" strokeWidth="2" strokeOpacity="0.10" />
+        <path d="M-60,340 C80,420 40,600 160,700 C280,800 220,940 360,1000" fill="none" stroke="#9CA3AF" strokeWidth="1.2" strokeOpacity="0.07" />
+        {/* Bottom-center — orange swirl */}
+        <path d="M300,900 C380,820 500,860 520,780 C540,700 460,660 540,600 C620,540 700,580 720,500" fill="none" stroke="#F47920" strokeWidth="2" strokeOpacity="0.09" />
+        {/* Right-center — grey loop */}
+        <path d="M820,500 C780,420 840,360 900,400 C960,440 940,520 880,540 C820,560 800,500 840,480" fill="none" stroke="#9CA3AF" strokeWidth="1.5" strokeOpacity="0.12" />
+      </svg>
+
       {/* Hero section */}
       <section className="relative bg-light-gray py-16 px-4 text-center overflow-hidden">
-        {/* Decorative swirls */}
+        {/* Hero swirls */}
         <svg
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid slice"
         >
-          {/* Large orange swirl — top-left */}
-          <path
-            d="M-60,40 C20,0 80,120 0,160 C-80,200 -40,300 60,280 C160,260 200,160 160,80"
-            fill="none"
-            stroke="#F47920"
-            strokeWidth="2.5"
-            strokeOpacity="0.18"
-          />
-          <path
-            d="M-80,80 C10,30 100,150 20,200 C-60,250 -20,360 100,330 C220,300 260,180 200,90"
-            fill="none"
-            stroke="#F47920"
-            strokeWidth="1.5"
-            strokeOpacity="0.10"
-          />
-          {/* Large grey swirl — bottom-right */}
-          <path
-            d="M110%,30 C90%,80 70%,0 85%,60 C100%,120 80%,180 95%,140"
-            fill="none"
-            stroke="#9CA3AF"
-            strokeWidth="2"
-            strokeOpacity="0.15"
-          />
-          <path
-            d="M900,10 C820,70 760,-20 800,80 C840,180 760,220 840,190 C920,160 940,80 900,40"
-            fill="none"
-            stroke="#9CA3AF"
-            strokeWidth="2"
-            strokeOpacity="0.12"
-          />
-          {/* Small orange accent swirl — right side */}
-          <path
-            d="M880,60 C860,20 920,0 940,40 C960,80 920,120 880,100 C840,80 860,40 900,50"
-            fill="none"
-            stroke="#F47920"
-            strokeWidth="1.5"
-            strokeOpacity="0.20"
-          />
-          {/* Small grey swirl — left side */}
-          <path
-            d="M40,180 C20,140 60,110 80,140 C100,170 80,210 50,200 C20,190 30,160 55,165"
-            fill="none"
-            stroke="#9CA3AF"
-            strokeWidth="1.5"
-            strokeOpacity="0.18"
-          />
+          {/* Top-left orange swirls */}
+          <path d="M-60,40 C20,0 80,120 0,160 C-80,200 -40,300 60,280 C160,260 200,160 160,80" fill="none" stroke="#F47920" strokeWidth="2.5" strokeOpacity="0.20" />
+          <path d="M-80,80 C10,30 100,150 20,200 C-60,250 -20,360 100,330 C220,300 260,180 200,90" fill="none" stroke="#F47920" strokeWidth="1.5" strokeOpacity="0.12" />
+          <path d="M-40,10 C40,-20 100,80 40,120 C-20,160 10,240 90,220 C170,200 180,120 140,60" fill="none" stroke="#F47920" strokeWidth="1" strokeOpacity="0.10" />
+          {/* Right side orange swirls */}
+          <path d="M880,60 C860,20 920,0 940,40 C960,80 920,120 880,100 C840,80 860,40 900,50" fill="none" stroke="#F47920" strokeWidth="2" strokeOpacity="0.22" />
+          <path d="M920,20 C900,-10 960,-20 980,30 C1000,80 950,130 910,110 C870,90 890,40 930,40" fill="none" stroke="#F47920" strokeWidth="1.2" strokeOpacity="0.13" />
+          <path d="M860,100 C830,60 880,30 910,70 C940,110 900,160 860,140 C820,120 840,80 870,85" fill="none" stroke="#F47920" strokeWidth="1" strokeOpacity="0.10" />
+          {/* Top-right grey swirls */}
+          <path d="M900,10 C820,70 760,-20 800,80 C840,180 760,220 840,190 C920,160 940,80 900,40" fill="none" stroke="#9CA3AF" strokeWidth="2" strokeOpacity="0.14" />
+          <path d="M940,30 C860,90 800,-10 840,90 C880,190 800,230 880,200 C960,170 980,90 940,50" fill="none" stroke="#9CA3AF" strokeWidth="1.2" strokeOpacity="0.09" />
+          {/* Bottom-left grey swirls */}
+          <path d="M40,180 C20,140 60,110 80,140 C100,170 80,210 50,200 C20,190 30,160 55,165" fill="none" stroke="#9CA3AF" strokeWidth="1.8" strokeOpacity="0.18" />
+          <path d="M20,200 C0,160 40,125 65,155 C90,185 68,228 38,218 C8,208 18,175 42,178" fill="none" stroke="#9CA3AF" strokeWidth="1" strokeOpacity="0.11" />
+          {/* Center-bottom orange wisp */}
+          <path d="M380,200 C420,160 480,180 470,220 C460,260 400,270 390,240 C380,210 410,195 430,210" fill="none" stroke="#F47920" strokeWidth="1.2" strokeOpacity="0.13" />
+          {/* Center-top grey wisp */}
+          <path d="M460,0 C490,-20 530,20 510,50 C490,80 450,70 450,45 C450,20 475,5 490,20" fill="none" stroke="#9CA3AF" strokeWidth="1" strokeOpacity="0.12" />
         </svg>
 
         <div className="relative z-10">

@@ -20,25 +20,22 @@ refactor: typescript-migration (#21)
 
 ---
 
-### 2. Committing to Main
+### 2. All Changes Require a Branch and Pull Request
 
-Small, low-risk changes can be committed directly to `main` with a clear commit message:
+`main` is branch-protected. **All changes — including small fixes — must go through a feature branch and Pull Request.** Direct pushes to `main` are blocked.
 
-- Content updates and copy fixes
-- Documentation updates
-- Minor CSS or style tweaks
-- Bug fixes that touch one or two files
+No exceptions. Even a one-line typo fix needs a branch and PR.
 
 ---
 
-### 3. Feature Branches and Pull Requests
+### 3. Branch and Pull Request Workflow
 
-Large or risky changes **must** use a feature branch and go through a Pull Request before merging to `main`:
-
-- New features or pages
-- Major refactors touching multiple files
-- TypeScript migration
-- Changes to data structures or export/import logic
+1. Create a branch following the naming conventions below
+2. Make your changes and commit with a signed commit referencing the issue number
+3. Push the branch and open a Pull Request
+4. Merge the PR — no reviewer approval required (solo project)
+5. Delete the branch after merging
+6. Run `npm run deploy` after merging if the change affects the webapp
 
 ---
 
@@ -86,7 +83,7 @@ When using Claude Code (or any AI tool) on this project, the tool must always:
 - Convert or refactor **one file at a time**, showing each before applying
 - **Never apply multiple changes in bulk** without review
 - Create GitHub Issues for all changes
-- Use branches for large changes
+- Always use a branch — direct commits to `main` are blocked by branch protection
 - Run `npm run check-links` before any release
 
 **No change should be applied to the codebase without the developer reviewing and explicitly approving it first.** This applies to all operations — creates, edits, deletes, and refactors.

@@ -108,17 +108,17 @@ export default function Resources() {
         <ResourceSection
           title="Key Certifications"
           items={role.certifications}
-          color="#0D7377"
+          color="#6B2D8B"
         />
         <ResourceSection
           title="Practice Platforms"
           items={role.platforms}
-          color="#0D7377"
+          color="#6B2D8B"
         />
         <ResourceSection
           title="Communities & Events"
           items={role.communities}
-          color="#0D7377"
+          color="#6B2D8B"
         />
       </div>
     </div>

@@ -47,12 +47,6 @@ See [SECURITY.md](SECURITY.md) for the full security model, privacy details, and
 
 ---
 
-## Customizing This Toolkit
-
-See [WHITELABEL.md](WHITELABEL.md) for a step-by-step guide to forking and customizing this toolkit.
-
----
-
 ## Local Development
 
 > This section is for developers who want to run or modify the code locally.
@@ -105,4 +99,4 @@ This builds the app and publishes the `dist/` folder via the `gh-pages` branch.
 
 ## License
 
-MIT — free to use and adapt for any mentoring program.
+© 2026 Marie Wang. Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) — attribution required, no commercial use, no derivatives. See [LICENSE](LICENSE) for details.

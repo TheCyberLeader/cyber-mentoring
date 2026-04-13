@@ -53,7 +53,7 @@ async function checkURL(url) {
       method: "HEAD",
       redirect: "manual",
       signal: controller.signal,
-      headers: { "User-Agent": "isc2nj-link-checker/1.0" },
+      headers: { "User-Agent": "cyber-mentoring-link-checker/1.0" },
     });
 
     clearTimeout(timer);
@@ -93,7 +93,7 @@ async function checkWithGet(url) {
       method: "GET",
       redirect: "manual",
       signal: controller.signal,
-      headers: { "User-Agent": "isc2nj-link-checker/1.0" },
+      headers: { "User-Agent": "cyber-mentoring-link-checker/1.0" },
     });
 
     clearTimeout(timer);

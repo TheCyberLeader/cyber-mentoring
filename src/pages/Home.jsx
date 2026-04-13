@@ -33,6 +33,11 @@ export default function Home() {
         <h1 className="text-3xl sm:text-4xl font-bold mb-3 text-navy">
           Cybersecurity Mentoring Toolkit
         </h1>
+        <img
+          src={`${import.meta.env.BASE_URL}assets/maries-mentor-mondays.png`}
+          alt="Marie's Mentor Mondays"
+          className="mx-auto mt-4 h-16"
+        />
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">

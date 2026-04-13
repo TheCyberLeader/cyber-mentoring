@@ -5,8 +5,8 @@ export const config = {
   programName: "Cybersecurity Mentoring Program",
   logoHorizontal: "",
   logoVertical: "",
-  accentColor: "#6DBE45",
-  secondaryColor: "#4A6FA5",
+  accentColor: "#F47920",
+  secondaryColor: "#6B2D8B",
   maxSessions: 4,
   maxMilestones: 4,
 };

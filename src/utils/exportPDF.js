@@ -2,13 +2,13 @@ import jsPDF from "jspdf";
 import { config } from "../data/config";
 import { roles } from "../data/roles";
 
-const NAVY = [27, 58, 107];
-const TEAL = [13, 115, 119];
+const NAVY = [74, 26, 107];
+const TEAL = [107, 45, 139];
 const DARK = [34, 34, 34];
 const GRAY = [120, 120, 120];
 const LIGHT_BG = [242, 243, 244];
 const WHITE = [255, 255, 255];
-const ACCENT = [23, 165, 137];
+const ACCENT = [244, 121, 32];
 
 let cachedLogo = null;
 

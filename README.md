@@ -2,7 +2,7 @@
 
 A local-first web application for structured cybersecurity mentoring programs.
 
-<img width="1006" height="550" alt="Screenshot 2026-03-08 at 12 46 47 PM" src="https://github.com/user-attachments/assets/82717ac0-71cf-4e55-9310-b1236be3ed16" />
+![Cybersecurity Mentoring Toolkit homepage](public/assets/readme-screenshot.png)
 
 
 ## 🚀 Use the App

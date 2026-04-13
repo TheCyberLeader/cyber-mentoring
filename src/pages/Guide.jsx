@@ -54,7 +54,7 @@ function MentorTab() {
           <ul className="space-y-3">
             {mentorResponsibilities.map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-sm text-dark/80">
-                <span className="shrink-0 w-5 h-5 rounded-full bg-isc2-green/20 text-isc2-green flex items-center justify-center text-xs font-bold mt-0.5">
+                <span className="shrink-0 w-5 h-5 rounded-full bg-accent-orange/20 text-accent-orange flex items-center justify-center text-xs font-bold mt-0.5">
                   {i + 1}
                 </span>
                 {item}
@@ -213,7 +213,7 @@ function MenteeTab() {
           <ol className="space-y-3">
             {menteeJsonExport.steps.map((step, i) => (
               <li key={i} className="flex items-start gap-3 text-sm text-dark/80">
-                <span className="shrink-0 w-5 h-5 rounded-full bg-isc2-blue/15 text-isc2-blue flex items-center justify-center text-xs font-bold mt-0.5">
+                <span className="shrink-0 w-5 h-5 rounded-full bg-purple/15 text-purple flex items-center justify-center text-xs font-bold mt-0.5">
                   {i + 1}
                 </span>
                 {step}

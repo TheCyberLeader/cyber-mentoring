@@ -98,7 +98,7 @@ export default function SessionModal({ session, nextNumber, onSave, onClose }) {
               value={form.date}
               onChange={handleChange}
               required
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple"
             />
           </div>
 
@@ -113,7 +113,7 @@ export default function SessionModal({ session, nextNumber, onSave, onClose }) {
               value={form.topics}
               onChange={handleChange}
               rows={3}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue resize-y"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple resize-y"
             />
           </div>
 
@@ -128,7 +128,7 @@ export default function SessionModal({ session, nextNumber, onSave, onClose }) {
               value={form.actionItems}
               onChange={handleChange}
               rows={3}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue resize-y"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple resize-y"
             />
           </div>
 
@@ -168,7 +168,7 @@ export default function SessionModal({ session, nextNumber, onSave, onClose }) {
               value={form.notes}
               onChange={handleChange}
               rows={3}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue resize-y"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple resize-y"
             />
           </div>
 

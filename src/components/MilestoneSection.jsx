@@ -151,7 +151,7 @@ export default function MilestoneSection({ maxMilestones }) {
               key={m.id}
               className="flex items-start gap-4 rounded-lg border border-gray-200 bg-white p-4"
             >
-              <div className="shrink-0 w-2 h-2 rounded-full bg-isc2-green mt-2" />
+              <div className="shrink-0 w-2 h-2 rounded-full bg-accent-orange mt-2" />
               <div className="flex-1 min-w-0">
                 <div className="flex items-start justify-between gap-2">
                   <p className="font-medium text-navy">{m.achievement}</p>

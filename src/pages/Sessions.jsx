@@ -217,7 +217,7 @@ export default function Sessions() {
                   <td className="px-4 py-3 text-right whitespace-nowrap">
                     <button
                       onClick={() => openEditModal(s)}
-                      className="text-isc2-blue hover:text-navy transition-colors mr-3"
+                      className="text-purple hover:text-navy transition-colors mr-3"
                       aria-label={`Edit session ${s.sessionNumber}`}
                     >
                       Edit
@@ -258,7 +258,7 @@ export default function Sessions() {
           </button>
           <button
             onClick={exportAllJSON}
-            className="bg-isc2-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-isc2-blue/90 transition-colors"
+            className="bg-purple text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple/90 transition-colors"
           >
             Export as JSON
           </button>

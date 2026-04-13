@@ -50,7 +50,7 @@ export default function Home() {
             <div className="grid sm:grid-cols-2 gap-6">
               <Link
                 to="/setup?role=mentor"
-                className="group block rounded-xl border-2 border-teal bg-white p-8 text-center shadow-sm hover:shadow-lg hover:border-isc2-green transition-all"
+                className="group block rounded-xl border-2 border-teal bg-white p-8 text-center shadow-sm hover:shadow-lg hover:border-accent-orange transition-all"
               >
                 <div className="text-4xl mb-3">🧭</div>
                 <h3 className="text-xl font-bold text-navy mb-2">
@@ -63,7 +63,7 @@ export default function Home() {
               </Link>
               <Link
                 to="/setup?role=mentee"
-                className="group block rounded-xl border-2 border-teal bg-white p-8 text-center shadow-sm hover:shadow-lg hover:border-isc2-green transition-all"
+                className="group block rounded-xl border-2 border-teal bg-white p-8 text-center shadow-sm hover:shadow-lg hover:border-accent-orange transition-all"
               >
                 <div className="text-4xl mb-3">🚀</div>
                 <h3 className="text-xl font-bold text-navy mb-2">
@@ -122,7 +122,7 @@ export default function Home() {
               </Link>
               <Link
                 to="/goals"
-                className="inline-flex items-center gap-2 bg-isc2-blue text-white px-5 py-2.5 rounded-lg font-medium hover:bg-isc2-blue/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-purple text-white px-5 py-2.5 rounded-lg font-medium hover:bg-purple/90 transition-colors"
               >
                 {hasGoals ? "Update Goals" : "Set Goals"}
               </Link>

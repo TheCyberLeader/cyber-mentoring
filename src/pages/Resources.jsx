@@ -10,7 +10,7 @@ function ExternalLink({ href, children, className = "" }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`text-isc2-blue hover:text-navy hover:underline transition-colors ${className}`}
+      className={`text-purple hover:text-navy hover:underline transition-colors ${className}`}
     >
       {children}
     </a>
@@ -40,7 +40,7 @@ function ResourceSection({ title, items, color }) {
                 <p className="text-xs text-dark/50 mt-0.5">{item.note}</p>
               )}
             </div>
-            <ExternalLink href={item.url} className="shrink-0 text-dark/30 hover:text-isc2-blue">
+            <ExternalLink href={item.url} className="shrink-0 text-dark/30 hover:text-purple">
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
@@ -90,7 +90,7 @@ export default function Resources() {
           id="role-select"
           value={activeRole}
           onChange={(e) => setActiveRole(e.target.value)}
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-isc2-blue"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-purple"
         >
           {roleSlugs.map((slug) => (
             <option key={slug} value={slug}>

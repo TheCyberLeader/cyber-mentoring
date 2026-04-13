@@ -38,7 +38,7 @@ export default function Navbar() {
                   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive
                       ? "bg-navy text-white"
-                      : "text-navy/70 hover:bg-navy/10 hover:text-navy"
+                      : "text-navy/70 hover:bg-accent-orange/10 hover:text-accent-orange"
                   }`
                 }
               >
@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden p-2 rounded-md text-navy/70 hover:text-navy hover:bg-navy/10"
+            className="lg:hidden p-2 rounded-md text-navy/70 hover:text-accent-orange hover:bg-accent-orange/10"
             aria-label="Toggle navigation menu"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,7 +78,7 @@ export default function Navbar() {
                   `block px-3 py-2 rounded-md text-base font-medium ${
                     isActive
                       ? "bg-navy text-white"
-                      : "text-navy/70 hover:bg-navy/10 hover:text-navy"
+                      : "text-navy/70 hover:bg-accent-orange/10 hover:text-accent-orange"
                   }`
                 }
               >

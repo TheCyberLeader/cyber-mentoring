@@ -29,15 +29,72 @@ export default function Home() {
   return (
     <div className="min-h-[calc(100vh-4rem)]">
       {/* Hero section */}
-      <section className="bg-light-gray py-16 px-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-3 text-navy">
-          Cybersecurity Mentoring Toolkit
-        </h1>
-        <img
-          src={`${import.meta.env.BASE_URL}assets/maries-mentor-mondays.png`}
-          alt="Marie's Mentor Mondays"
-          className="mx-auto mt-4 h-24"
-        />
+      <section className="relative bg-light-gray py-16 px-4 text-center overflow-hidden">
+        {/* Decorative swirls */}
+        <svg
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          {/* Large orange swirl — top-left */}
+          <path
+            d="M-60,40 C20,0 80,120 0,160 C-80,200 -40,300 60,280 C160,260 200,160 160,80"
+            fill="none"
+            stroke="#F47920"
+            strokeWidth="2.5"
+            strokeOpacity="0.18"
+          />
+          <path
+            d="M-80,80 C10,30 100,150 20,200 C-60,250 -20,360 100,330 C220,300 260,180 200,90"
+            fill="none"
+            stroke="#F47920"
+            strokeWidth="1.5"
+            strokeOpacity="0.10"
+          />
+          {/* Large grey swirl — bottom-right */}
+          <path
+            d="M110%,30 C90%,80 70%,0 85%,60 C100%,120 80%,180 95%,140"
+            fill="none"
+            stroke="#9CA3AF"
+            strokeWidth="2"
+            strokeOpacity="0.15"
+          />
+          <path
+            d="M900,10 C820,70 760,-20 800,80 C840,180 760,220 840,190 C920,160 940,80 900,40"
+            fill="none"
+            stroke="#9CA3AF"
+            strokeWidth="2"
+            strokeOpacity="0.12"
+          />
+          {/* Small orange accent swirl — right side */}
+          <path
+            d="M880,60 C860,20 920,0 940,40 C960,80 920,120 880,100 C840,80 860,40 900,50"
+            fill="none"
+            stroke="#F47920"
+            strokeWidth="1.5"
+            strokeOpacity="0.20"
+          />
+          {/* Small grey swirl — left side */}
+          <path
+            d="M40,180 C20,140 60,110 80,140 C100,170 80,210 50,200 C20,190 30,160 55,165"
+            fill="none"
+            stroke="#9CA3AF"
+            strokeWidth="1.5"
+            strokeOpacity="0.18"
+          />
+        </svg>
+
+        <div className="relative z-10">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 text-navy">
+            Cybersecurity Mentoring Toolkit
+          </h1>
+          <img
+            src={`${import.meta.env.BASE_URL}assets/maries-mentor-mondays.png`}
+            alt="Marie's Mentor Mondays"
+            className="mx-auto mt-4 h-24"
+          />
+        </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">

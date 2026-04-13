@@ -9,6 +9,8 @@ A local-first web application for structured cybersecurity mentoring programs.
 
 **No installation needed. Just click and go:**
 
+**[→ Open the Cybersecurity Mentoring Toolkit](https://thecyberleader.github.io/cyber-mentoring/)**
+
 The app runs entirely in your browser. Nothing is installed, nothing is uploaded, and no account is required.
 
 ---

@@ -80,7 +80,7 @@ export default function Setup() {
             type="text"
             value={form.name}
             onChange={handleChange}
-            className={`w-full rounded-lg border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue ${
+            className={`w-full rounded-lg border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple ${
               errors.name ? "border-red-400" : "border-gray-300"
             }`}
             placeholder="Your full name"
@@ -101,7 +101,7 @@ export default function Setup() {
             type="email"
             value={form.email}
             onChange={handleChange}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple"
             placeholder="you@example.com"
           />
         </div>
@@ -162,7 +162,7 @@ export default function Setup() {
             name="targetRole"
             value={form.targetRole}
             onChange={handleChange}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-isc2-blue"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-purple"
           >
             <option value="">Select a career track...</option>
             {roleOptions.map((opt) => (
@@ -184,7 +184,7 @@ export default function Setup() {
             type="date"
             value={form.programStartDate}
             onChange={handleChange}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple"
           />
         </div>
 
@@ -199,7 +199,7 @@ export default function Setup() {
             type="text"
             value={form.partnerName}
             onChange={handleChange}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple"
             placeholder={`Your ${form.role === "mentor" ? "mentee" : "mentor"}'s name`}
           />
         </div>

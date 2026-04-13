@@ -105,7 +105,7 @@ function TemplateCard({ template, profile }) {
             </label>
             <button
               onClick={() => handleCopy(subject, "subject")}
-              className="text-xs text-isc2-blue hover:text-navy transition-colors"
+              className="text-xs text-purple hover:text-navy transition-colors"
             >
               {copied === "subject" ? "Copied!" : "Copy subject"}
             </button>
@@ -123,7 +123,7 @@ function TemplateCard({ template, profile }) {
             </label>
             <button
               onClick={() => handleCopy(body, "body")}
-              className="text-xs text-isc2-blue hover:text-navy transition-colors"
+              className="text-xs text-purple hover:text-navy transition-colors"
             >
               {copied === "body" ? "Copied!" : "Copy body"}
             </button>
@@ -133,7 +133,7 @@ function TemplateCard({ template, profile }) {
             value={body}
             onChange={(e) => setBody(e.target.value)}
             rows={10}
-            className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm font-mono leading-relaxed focus:outline-none focus:ring-2 focus:ring-isc2-blue resize-y"
+            className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm font-mono leading-relaxed focus:outline-none focus:ring-2 focus:ring-purple resize-y"
           />
         </div>
 
@@ -148,7 +148,7 @@ function TemplateCard({ template, profile }) {
           {hasTokens && !filled && (
             <button
               onClick={handleFill}
-              className="bg-isc2-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-isc2-blue/90 transition-colors"
+              className="bg-purple text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple/90 transition-colors"
             >
               Fill from Profile
             </button>
@@ -178,7 +178,7 @@ export default function EmailTemplates() {
       </p>
 
       {profile && (
-        <div className="rounded-lg border border-isc2-blue/30 bg-isc2-blue/5 p-4 mb-8 text-sm text-dark/70">
+        <div className="rounded-lg border border-purple/30 bg-purple/5 p-4 mb-8 text-sm text-dark/70">
           Profile detected &mdash; use the <strong>"Fill from Profile"</strong> button on any template to auto-replace{" "}
           <span className="bg-amber-100 text-amber-800 rounded px-1 text-xs font-medium">[TOKENS]</span>{" "}
           with your saved data.

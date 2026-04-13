@@ -101,7 +101,7 @@ export default function Goals() {
 
       {/* Pre-fill hint */}
       {profile.targetRole && roles[profile.targetRole] && !form.targetJobTitle && (
-        <div className="rounded-lg border border-isc2-blue/30 bg-isc2-blue/5 p-4 mb-8 text-sm text-dark/70">
+        <div className="rounded-lg border border-purple/30 bg-purple/5 p-4 mb-8 text-sm text-dark/70">
           Your profile target role is{" "}
           <strong className="text-navy">{roles[profile.targetRole].label}</strong>.
           You can use that as your target job title below.
@@ -126,7 +126,7 @@ export default function Goals() {
                 onChange={handleChange}
                 rows={3}
                 placeholder={field.placeholder}
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue resize-y placeholder:text-dark/30"
+                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple resize-y placeholder:text-dark/30"
               />
             ) : (
               <input
@@ -137,7 +137,7 @@ export default function Goals() {
                 onChange={handleChange}
                 min={field.type === "number" ? "0" : undefined}
                 placeholder={field.placeholder}
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-isc2-blue placeholder:text-dark/30"
+                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple placeholder:text-dark/30"
               />
             )}
           </div>

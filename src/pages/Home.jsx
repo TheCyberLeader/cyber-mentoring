@@ -28,23 +28,59 @@ export default function Home() {
 
   return (
     <div className="relative min-h-[calc(100vh-4rem)] overflow-hidden">
-      {/* Full-page swirl layer — visible in white content area */}
+      {/* Full-page swirl layer — covers white content area */}
       <svg
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid slice"
       >
-        {/* Right side — large orange arc descending through page */}
-        <path d="M1100,100 C980,200 1060,400 940,520 C820,640 900,800 780,880" fill="none" stroke="#F47920" strokeWidth="2.5" strokeOpacity="0.10" />
+        {/* === RIGHT EDGE — orange arcs sweeping down === */}
+        <path d="M1100,100 C980,200 1060,400 940,520 C820,640 900,800 780,880" fill="none" stroke="#F47920" strokeWidth="2.5" strokeOpacity="0.11" />
         <path d="M1080,60 C1000,180 1080,380 960,500 C840,620 920,780 800,860" fill="none" stroke="#F47920" strokeWidth="1.5" strokeOpacity="0.07" />
-        {/* Left side — grey arc */}
-        <path d="M-80,300 C60,380 20,560 140,660 C260,760 200,900 340,960" fill="none" stroke="#9CA3AF" strokeWidth="2" strokeOpacity="0.10" />
+        <path d="M1120,200 C1020,320 1080,500 980,600 C880,700 940,840 840,920" fill="none" stroke="#F47920" strokeWidth="1" strokeOpacity="0.06" />
+
+        {/* === LEFT EDGE — grey arcs === */}
+        <path d="M-80,300 C60,380 20,560 140,660 C260,760 200,900 340,960" fill="none" stroke="#9CA3AF" strokeWidth="2" strokeOpacity="0.11" />
         <path d="M-60,340 C80,420 40,600 160,700 C280,800 220,940 360,1000" fill="none" stroke="#9CA3AF" strokeWidth="1.2" strokeOpacity="0.07" />
-        {/* Bottom-center — orange swirl */}
-        <path d="M300,900 C380,820 500,860 520,780 C540,700 460,660 540,600 C620,540 700,580 720,500" fill="none" stroke="#F47920" strokeWidth="2" strokeOpacity="0.09" />
-        {/* Right-center — grey loop */}
-        <path d="M820,500 C780,420 840,360 900,400 C960,440 940,520 880,540 C820,560 800,500 840,480" fill="none" stroke="#9CA3AF" strokeWidth="1.5" strokeOpacity="0.12" />
+        <path d="M-100,240 C40,300 0,480 120,580 C240,680 180,820 300,900" fill="none" stroke="#9CA3AF" strokeWidth="1" strokeOpacity="0.07" />
+
+        {/* === UPPER-CENTER — grey wisps (just below hero) === */}
+        <path d="M320,240 C380,200 460,240 450,290 C440,340 370,350 340,310 C310,270 360,240 400,260" fill="none" stroke="#9CA3AF" strokeWidth="1.5" strokeOpacity="0.13" />
+        <path d="M560,220 C620,180 700,220 690,275 C680,330 600,345 570,300 C540,255 590,225 635,245" fill="none" stroke="#9CA3AF" strokeWidth="1.2" strokeOpacity="0.10" />
+
+        {/* === UPPER-RIGHT — orange loop === */}
+        <path d="M820,260 C800,210 860,190 890,230 C920,270 890,320 850,310 C810,300 820,260 855,270" fill="none" stroke="#F47920" strokeWidth="1.8" strokeOpacity="0.14" />
+        <path d="M760,300 C740,250 800,225 835,268 C870,310 840,365 800,352 C760,339 765,295 800,305" fill="none" stroke="#F47920" strokeWidth="1" strokeOpacity="0.09" />
+
+        {/* === MID-LEFT — orange curl === */}
+        <path d="M60,420 C100,370 170,390 165,445 C160,500 90,515 60,475 C30,435 70,410 110,425" fill="none" stroke="#F47920" strokeWidth="1.8" strokeOpacity="0.13" />
+        <path d="M100,480 C140,430 210,455 205,510 C200,565 130,575 100,535 C70,495 115,470 155,488" fill="none" stroke="#F47920" strokeWidth="1" strokeOpacity="0.08" />
+
+        {/* === MID-CENTER — grey loop === */}
+        <path d="M440,400 C490,345 570,370 562,430 C554,490 470,505 440,460 C410,415 460,390 510,410" fill="none" stroke="#9CA3AF" strokeWidth="1.8" strokeOpacity="0.13" />
+        <path d="M480,460 C530,405 610,430 602,492 C594,554 510,568 478,522 C446,476 500,450 550,472" fill="none" stroke="#9CA3AF" strokeWidth="1" strokeOpacity="0.08" />
+
+        {/* === MID-RIGHT — grey loop === */}
+        <path d="M820,500 C780,420 840,360 900,400 C960,440 940,520 880,540 C820,560 800,500 840,480" fill="none" stroke="#9CA3AF" strokeWidth="1.8" strokeOpacity="0.13" />
+        <path d="M860,430 C830,370 885,330 928,372 C971,414 955,490 900,508 C845,526 848,468 880,460" fill="none" stroke="#9CA3AF" strokeWidth="1" strokeOpacity="0.08" />
+
+        {/* === LOWER-LEFT — grey curl === */}
+        <path d="M80,620 C120,560 200,580 196,648 C192,716 110,730 78,682 C46,634 90,610 140,632" fill="none" stroke="#9CA3AF" strokeWidth="1.8" strokeOpacity="0.12" />
+        <path d="M40,700 C80,640 160,660 155,730 C150,800 65,815 32,765 C-1,715 45,690 98,714" fill="none" stroke="#9CA3AF" strokeWidth="1" strokeOpacity="0.07" />
+
+        {/* === LOWER-CENTER — orange swirl === */}
+        <path d="M300,650 C380,580 500,620 520,700 C540,780 460,800 400,760 C340,720 360,660 430,670" fill="none" stroke="#F47920" strokeWidth="2" strokeOpacity="0.10" />
+        <path d="M480,700 C540,630 640,660 650,740 C660,820 575,840 520,800 C465,760 490,700 555,715" fill="none" stroke="#F47920" strokeWidth="1.2" strokeOpacity="0.07" />
+
+        {/* === LOWER-RIGHT — orange swirl === */}
+        <path d="M780,640 C760,580 820,550 860,590 C900,630 885,695 840,705 C795,715 778,665 815,658" fill="none" stroke="#F47920" strokeWidth="1.8" strokeOpacity="0.12" />
+        <path d="M820,700 C800,640 862,608 904,650 C946,692 929,760 882,772 C835,784 820,730 858,720" fill="none" stroke="#F47920" strokeWidth="1" strokeOpacity="0.07" />
+
+        {/* === BOTTOM EDGE — grey wisps === */}
+        <path d="M200,860 C260,800 360,830 355,900 C350,970 260,985 220,935 C180,885 230,860 285,878" fill="none" stroke="#9CA3AF" strokeWidth="1.5" strokeOpacity="0.10" />
+        <path d="M580,840 C640,780 740,808 736,878 C732,948 638,962 598,912 C558,862 610,840 665,858" fill="none" stroke="#9CA3AF" strokeWidth="1.2" strokeOpacity="0.08" />
+        <path d="M900,820 C940,760 1020,785 1016,858 C1012,930 918,948 876,896 C834,844 888,820 944,840" fill="none" stroke="#F47920" strokeWidth="1.2" strokeOpacity="0.09" />
       </svg>
 
       {/* Hero section */}
